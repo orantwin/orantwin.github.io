@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
     
     <!-- SEO Meta Tags -->
-    <title>About ORAN Digital Twin & Work Packages | ORAN-TWIN Project</title>
-    <meta name="description" content="Learn about ORAN Digital Twin technology, challenges, and explore work packages including data augmentation, resource allocation, and testbed simulation for O-RAN networks.">
-    <meta name="keywords" content="ORAN Digital Twin, O-RAN challenges, work packages, data augmentation, resource allocation, testbed simulation, O-RAN research">
+    <title>About ORAN Digital Twin & Work Packages | ORAN-TWIN & ORAN-TWIN-X Projects</title>
+    <meta name="description" content="Learn about ORAN-TWIN & ORAN-TWIN-X Projects, ORAN Digital Twin technology, challenges, and explore work packages including data augmentation, resource allocation, and testbed simulation for O-RAN networks.">
+    <meta name="keywords" content="ORAN Digital Twin, O-RAN challenges, work packages, data augmentation, resource allocation, testbed simulation, ORAN-TWIN, ORAN-TWIN-X">
     <meta name="robots" content="index,follow">
     
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="About ORAN Digital Twin Technology & Work Packages">
+    <meta property="og:title" content="About ORAN Digital Twin Technology & ORAN-TWIN and ORAN-TWIN-X Work Packages">
     <meta property="og:description" content="Understanding ORAN Digital Twin challenges and research work packages">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://orantwin.github.io/about.html">
@@ -49,7 +49,7 @@
                     
                     <div id="site-identity">
                         <h1 class="site-title">
-                            <a href="index.html" rel="home">ORAN-TWIN</a>
+                            <a href="index.html" rel="home">ORAN-TWIN & ORAN-TWIN-X</a>
                         </h1>
                     </div>
                 </div>
@@ -90,8 +90,8 @@
                 <div class="overlay"></div>
                 <header class="page-header">
                     <div class="wrapper">
-                        <h2 class="page-title">ORAN-TWIN: Enhancing Performance of O-RAN with DL and RL-based Applications Leveraging Digital Twins for Training</h2>
-                        <p style="font-size:24px;color:white; font-family:sans-serif; margin-top: 1rem;">UKRI EPSRC CHEDDAR Hub TMF uplift project</p>
+                        <h2 class="page-title">ORAN-TWIN & ORAN-TWIN-X: Enhancing Performance of O-RAN with DL/RL/XAI-based Applications Leveraging Digital Twins</h2>
+                        <p style="font-size:24px;color:white; font-family:sans-serif; margin-top: 1rem;">UKRI EPSRC CHEDDAR Hub TMF uplift projects</p>
                     </div>
                 </header>
             </div>
@@ -106,7 +106,7 @@
                                 
                                 <p>An ORAN Digital Twin is a virtual replica of the physical components in an Open Radio Access Network (O-RAN), including the Radio Unit (RU), Central Unit (CU), and Distributed Unit (DU). This advanced digital model allows for testing and optimizing network configurations in a controlled virtual environment, assessing the impact of various parameters. It helps to detect and diagnose potential issues, improving network reliability and efficiency. Additionally, resource allocation strategies can be dynamically adjusted to enhance overall network performance. This innovative solution ensures efficient and reliable next-generation wireless communication.</p>
                                 
-                                <h2><strong>ORAN-TWIN Challenges</strong></h2>
+                                <h2><strong>ORAN-TWIN and ORAN-TWIN-X Challenges</strong></h2>
                                 
                                 <p>The Digital Twin (DT) facilitates real-time data acquisition and transmission, ensuring accurate and reliable insights while adapting to dynamic environments, optimizing network performance, and prioritizing robust security measures. However, there are some challenges as follows:</p>
                                 
@@ -125,6 +125,9 @@
                                     
                                     <h3><strong>• New Security Issues:</strong></h3>
                                     <p>There are two new issues raised from the implementation of digital twin onto ORAN. First is data poisoning, since malicious attackers could transmit fake datasets to digital twins and affect the trained model. Second is model poisoning, where the attackers directly modify the model weights during the update process. Therefore, a machine learning algorithm which is invulnerable to these attacks needs to be proposed.</p>
+
+                                    <h3><strong>• Explainability Issues:</strong></h3>
+                                    <p>We leverage deep reinforcement learning (DRL) to develop energy-aware xApp policies for tasks such as power control and resource block allocation. DRL offers the ability to learn complex policies under dynamic conditions, but its black-box nature significantly hinders interpretability, trust, and operational deployment.</p>
                                 </div>
                                 
                                 <!-- Work Packages Section -->
@@ -184,6 +187,22 @@
                                         <div class="task-item">
                                             <h4><strong>• Task 3.2:</strong></h4>
                                             <p>Develop demonstration scenarios and evaluate ML-based resource allocation xApp for various subscribed xApps in ORAN TWIN environments.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="work-package">
+                                    <h3 class="wp-title">WP-X (Led by University of Surrey): Explainable Digital Twin for Energy-Aware and Trustworthy O-RAN Control</h3>
+                                    
+                                    <div class="task-list">
+                                        <div class="task-item">
+                                            <h4><strong>• Task X.1:</strong></h4>
+                                            <p>A key methodological focus is the use of decision trees not only as surrogate models to distil DRL-based xApp policies, but also as analytical tools to assess decision explicability through entropy-based measures. This WP will investigate how tree-based splits correlate with network state structure and action confidence, enabling quantifiable explainability in O-RAN control.</p>
+                                        </div>
+                                        
+                                        <div class="task-item">
+                                            <h4><strong>• Task X.2:</strong></h4>
+                                            <p>Develop a lightweight tool that generates human-readable justifications for model outputs and assesses decision reliability under varying network conditions. This effort is inspired by recent advances in functional-output hierarchy modelling and will be adapted specifically to the O-RAN digital twin setting.</p>
                                         </div>
                                     </div>
                                 </div>
