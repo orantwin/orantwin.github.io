@@ -1,5 +1,5 @@
-/* ORAN-TWIN Optimized Styles */
-/* ============================= */
+/* ORAN-TWIN Optimized Styles - FIXED VERSION */
+/* ============================================= */
 
 /* Reset and Base Styles */
 * {
@@ -63,7 +63,7 @@
     outline-offset: 2px;
 }
 
-/* Content Spacing */
+/* Content Spacing - FIXED: Removed problematic styles */
 .entry-content h2 {
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -85,9 +85,11 @@
     color: #555;
 }
 
+/* FIXED: Image visibility - removed problematic styles */
 .entry-content img {
     max-width: 100%;
     height: auto;
+    display: block; /* Ensure images are visible */
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
@@ -107,7 +109,7 @@
     font-size: 1.2rem;
 }
 
-/* Team Section Styling */
+/* Team Section Styling - FIXED */
 .team-section, .researcher-section {
     margin: 3rem 0;
 }
@@ -137,6 +139,7 @@
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
+/* FIXED: Member photos - ensure they're visible */
 .member-photo {
     width: 200px;
     height: 200px;
@@ -145,6 +148,7 @@
     margin-right: 2rem;
     border: 4px solid #0066cc;
     flex-shrink: 0;
+    display: block; /* Ensure visibility */
 }
 
 .member-info {
@@ -177,7 +181,7 @@
     color: #555;
 }
 
-/* Researcher Grid */
+/* Researcher Grid - FIXED */
 .researcher-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -199,6 +203,7 @@
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
+/* FIXED: Researcher photos - ensure visibility */
 .researcher-photo {
     width: 150px;
     height: 150px;
@@ -206,6 +211,7 @@
     object-fit: cover;
     margin: 0 auto 1rem;
     border: 3px solid #0066cc;
+    display: block; /* Ensure visibility */
 }
 
 .researcher-info h4 {
@@ -284,7 +290,7 @@
     font-size: 1.1rem;
 }
 
-/* Partner Logos */
+/* Partner Logos - FIXED */
 .partner-logos {
     margin: 3rem 0;
     padding: 2rem 0;
@@ -315,9 +321,11 @@
     opacity: 0.8;
 }
 
+/* FIXED: Logo images - ensure visibility */
 .logo-grid img {
     max-width: 100%;
     height: auto;
+    display: block; /* Ensure visibility */
     filter: grayscale(20%);
     transition: filter 0.3s ease;
 }
@@ -482,15 +490,8 @@ button:focus {
     outline-offset: 2px;
 }
 
-/* Loading States */
-img[loading="lazy"] {
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-img[loading="lazy"].loaded {
-    opacity: 1;
-}
+/* REMOVED: Problematic loading states that were hiding images */
+/* The original CSS had img[loading="lazy"] styles that were hiding images */
 
 /* Utility Classes */
 .sr-only {
