@@ -288,6 +288,7 @@
 }
 
 /* REMOVED: All partner logo styling - they will use default browser styling */
+/* No CSS rules for .partner-logos, .logo-grid, .logo-grid a, or .logo-grid img */
 
 /* Contact Info Styling */
 .contact-info {
@@ -306,6 +307,222 @@
 
 .contact-info a:hover {
     text-decoration: underline;
+}
+
+/* News and Videos Page Styles */
+/* =========================== */
+
+.news-section, .videos-section, .publications-section, .events-section {
+    margin: 3rem 0;
+}
+
+/* News Items */
+.news-item {
+    background: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #0066cc;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.news-date {
+    color: #0066cc;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.news-item h4 {
+    color: #333;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+/* Video Grid */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.video-item {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.video-placeholder {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    text-align: center;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.video-placeholder i {
+    font-size: 3rem;
+    color: #0066cc;
+    margin-bottom: 1rem;
+}
+
+.video-placeholder p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.video-placeholder small {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.video-item h4 {
+    color: #333;
+    font-size: 1.2rem;
+    margin: 1.5rem 1.5rem 0.5rem;
+}
+
+.video-item p {
+    color: #666;
+    margin: 0 1.5rem 1.5rem;
+    line-height: 1.6;
+}
+
+/* Publications */
+.publication-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.publication-item {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #0066cc;
+    transition: transform 0.3s ease;
+}
+
+.publication-item:hover {
+    transform: translateX(5px);
+}
+
+.publication-item h4 {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.publication-authors {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.publication-venue {
+    color: #0066cc;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.publication-status {
+    color: #28a745;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Events */
+.event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.event-item {
+    display: flex;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.event-date {
+    background: #0066cc;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-right: 2rem;
+    min-width: 80px;
+    flex-shrink: 0;
+}
+
+.event-date .month {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.event-date .day {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.event-date .year {
+    display: block;
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+.event-details {
+    flex: 1;
+}
+
+.event-details h4 {
+    color: #333;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.event-details p {
+    color: #666;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.event-location {
+    color: #0066cc;
+    font-weight: 600;
+    font-size: 0.9rem;
 }
 
 /* Mobile Responsiveness */
@@ -349,6 +566,24 @@
         bottom: 15px;
         right: 15px;
     }
+    
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .event-item {
+        flex-direction: column;
+    }
+    
+    .event-date {
+        margin-right: 0;
+        margin-bottom: 1rem;
+        align-self: flex-start;
+    }
+    
+    .news-item, .publication-item, .event-item {
+        padding: 1.5rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -372,6 +607,23 @@
     .researcher-photo {
         width: 120px;
         height: 120px;
+    }
+    
+    .video-placeholder {
+        height: 150px;
+    }
+    
+    .video-placeholder i {
+        font-size: 2rem;
+    }
+    
+    .event-date {
+        min-width: 60px;
+        padding: 0.8rem;
+    }
+    
+    .event-date .day {
+        font-size: 1.5rem;
     }
 }
 
