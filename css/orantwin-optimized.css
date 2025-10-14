@@ -1,5 +1,5 @@
-/* ORAN-TWIN Optimized Styles - NO GRID VERSION */
-/* ============================================= */
+/* ORAN-TWIN Optimized Styles */
+/* ========================== */
 
 /* Reset and Base Styles */
 * {
@@ -287,35 +287,7 @@
     font-size: 1.1rem;
 }
 
-/* UPDATED: Partner Logos - NO GRID, Simple Flex Layout */
-.partner-logos {
-    margin: 3rem 0;
-    text-align: center;
-}
-
-.logo-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    margin: 2rem 0;
-}
-
-.logo-grid a {
-    display: inline-block;
-    transition: transform 0.3s ease;
-}
-
-.logo-grid a:hover {
-    transform: scale(1.05);
-}
-
-.logo-grid img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
+/* REMOVED: All partner logo styling - they will use default browser styling */
 
 /* Contact Info Styling */
 .contact-info {
@@ -355,14 +327,6 @@
     .member-photo {
         margin-right: 0;
         margin-bottom: 1rem;
-    }
-    
-    .logo-grid {
-        gap: 1rem;
-    }
-    
-    .logo-grid img {
-        max-width: 100px;
     }
     
     .researcher-grid {
@@ -409,10 +373,6 @@
         width: 120px;
         height: 120px;
     }
-    
-    .logo-grid {
-        gap: 0.5rem;
-    }
 }
 
 /* Print Styles */
@@ -425,10 +385,6 @@
     .team-member,
     .researcher-card {
         break-inside: avoid;
-    }
-    
-    .logo-grid {
-        display: none;
     }
 }
 
@@ -452,7 +408,6 @@
     .backtotop,
     .team-member,
     .researcher-card,
-    .logo-grid a,
     .task-item {
         transition: none;
     }
