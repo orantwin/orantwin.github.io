@@ -1,4 +1,4 @@
-/* ORAN-TWIN Optimized Styles - UPDATED VERSION */
+/* ORAN-TWIN Optimized Styles - NO GRID VERSION */
 /* ============================================= */
 
 /* Reset and Base Styles */
@@ -287,39 +287,34 @@
     font-size: 1.1rem;
 }
 
-/* UPDATED: Partner Logos - Removed background box and styling */
+/* UPDATED: Partner Logos - NO GRID, Simple Flex Layout */
 .partner-logos {
     margin: 3rem 0;
-    /* Removed: background, padding, border-radius */
+    text-align: center;
 }
 
 .logo-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    justify-items: center;
-    /* Removed: padding */
+    gap: 2rem;
+    margin: 2rem 0;
 }
 
 .logo-grid a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
     transition: transform 0.3s ease;
-    /* Removed: padding, border-radius */
 }
 
 .logo-grid a:hover {
     transform: scale(1.05);
-    /* Removed: opacity change */
 }
 
 .logo-grid img {
     max-width: 100%;
     height: auto;
     display: block;
-    /* Removed: filter effects */
 }
 
 /* Contact Info Styling */
@@ -363,7 +358,6 @@
     }
     
     .logo-grid {
-        grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
     
@@ -417,7 +411,6 @@
     }
     
     .logo-grid {
-        grid-template-columns: 1fr;
         gap: 0.5rem;
     }
 }
