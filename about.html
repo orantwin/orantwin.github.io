@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
     
     <!-- SEO Meta Tags -->
-    <title>About ORAN Digital Twin | ORAN-TWIN Project</title>
-    <meta name="description" content="Learn about ORAN Digital Twin technology, challenges in real-time synchronization, data integrity, and dynamic resource allocation for next-generation wireless networks.">
-    <meta name="keywords" content="ORAN Digital Twin, O-RAN challenges, real-time synchronization, data integrity, dynamic resource allocation">
+    <title>About ORAN Digital Twin & Work Packages | ORAN-TWIN Project</title>
+    <meta name="description" content="Learn about ORAN Digital Twin technology, challenges, and explore work packages including data augmentation, resource allocation, and testbed simulation for O-RAN networks.">
+    <meta name="keywords" content="ORAN Digital Twin, O-RAN challenges, work packages, data augmentation, resource allocation, testbed simulation, O-RAN research">
     <meta name="robots" content="index,follow">
     
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="About ORAN Digital Twin Technology">
-    <meta property="og:description" content="Understanding ORAN Digital Twin challenges and applications">
+    <meta property="og:title" content="About ORAN Digital Twin Technology & Work Packages">
+    <meta property="og:description" content="Understanding ORAN Digital Twin challenges and research work packages">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://orantwin.github.io/about.html">
     
@@ -73,9 +73,6 @@
                                 <a href="partners.html">Partners</a>
                             </li>
                             <li class="menu-item">
-                                <a href="tasks.html">Tasks</a>
-                            </li>
-                            <li class="menu-item">
                                 <a href="contact.html">Contact</a>
                             </li>
                         </ul>
@@ -101,6 +98,7 @@
                     <main id="main" class="site-main" role="main">
                         <article id="post-50" class="post-50 page type-page status-publish hentry">
                             <div class="entry-content">
+                                <!-- About Section -->
                                 <h2><strong>What is ORAN Digital Twin?</strong></h2>
                                 
                                 <p>An ORAN Digital Twin is a virtual replica of the physical components in an Open Radio Access Network (O-RAN), including the Radio Unit (RU), Central Unit (CU), and Distributed Unit (DU). This advanced digital model allows for testing and optimizing network configurations in a controlled virtual environment, assessing the impact of various parameters. It helps to detect and diagnose potential issues, improving network reliability and efficiency. Additionally, resource allocation strategies can be dynamically adjusted to enhance overall network performance. This innovative solution ensures efficient and reliable next-generation wireless communication.</p>
@@ -124,6 +122,67 @@
                                     
                                     <h3><strong>• New Security Issues:</strong></h3>
                                     <p>There are two new issues raised from the implementation of digital twin onto ORAN. First is data poisoning, since malicious attackers could transmit fake datasets to digital twins and affect the trained model. Second is model poisoning, where the attackers directly modify the model weights during the update process. Therefore, a machine learning algorithm which is invulnerable to these attacks needs to be proposed.</p>
+                                </div>
+                                
+                                <!-- Work Packages Section -->
+                                <h2><strong>Work Packages and Tasks</strong></h2>
+                                
+                                <div class="work-package">
+                                    <h3 class="wp-title">WP1 (Led by Birmingham City University): Data analysis and augmentation</h3>
+                                    
+                                    <div class="task-list">
+                                        <div class="task-item">
+                                            <h4><strong>• Task 1.1:</strong></h4>
+                                            <p>Create a training time data augmentation method to generate synthetic data tailored to O-RAN networks.</p>
+                                        </div>
+                                        
+                                        <div class="task-item">
+                                            <h4><strong>• Task 1.2:</strong></h4>
+                                            <p>Validate data augmentation techniques through empirical evaluation.</p>
+                                        </div>
+                                        
+                                        <div class="task-item">
+                                            <h4><strong>• Task 1.3:</strong></h4>
+                                            <p>Identify security requirements and threat models for ML-based xApps in Near RT O-RAN networks.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="work-package">
+                                    <h3 class="wp-title">WP2 (Led by University of Leeds): Resource allocation</h3>
+                                    
+                                    <div class="task-list">
+                                        <div class="task-item">
+                                            <h4><strong>• Task 2.1:</strong></h4>
+                                            <p>Develop optimization algorithms for dynamic resource allocation in O-RAN environments, leveraging real-time workload and performance metrics of xApps.</p>
+                                        </div>
+                                        
+                                        <div class="task-item">
+                                            <h4><strong>• Task 2.2:</strong></h4>
+                                            <p>Implement resource monitoring and management functionalities within DT environments.</p>
+                                        </div>
+                                        
+                                        <div class="task-item">
+                                            <h4><strong>• Task 2.3:</strong></h4>
+                                            <p>Evaluate the performance and efficiency of allocation strategies through simulation and experimentation.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="work-package">
+                                    <h3 class="wp-title">WP3 (Led by University of Surrey): Testbed, simulation and demonstration</h3>
+                                    
+                                    <div class="task-list">
+                                        <div class="task-item">
+                                            <h4><strong>• Task 3.1:</strong></h4>
+                                            <p>Design simulation scenarios replicating real-world O-RAN network conditions and user interactions.</p>
+                                        </div>
+                                        
+                                        <div class="task-item">
+                                            <h4><strong>• Task 3.2:</strong></h4>
+                                            <p>Develop demonstration scenarios and evaluate ML-based resource allocation xApp for various subscribed xApps in ORAN TWIN environments.</p>
+                                        </div>
+                                    </div>
                                 </div>
                                 
                                 <!-- Partner Logos -->
@@ -157,14 +216,12 @@
                     </main>
                 </div>
                 
-                <!-- Sidebar - FIXED: Removed JavaScript loading -->
+                <!-- Sidebar -->
                 <aside id="secondary" class="widget-area" role="complementary">
                     <aside id="text-5" class="widget widget_text">
                         <h2 class="widget-title">Important Dates</h2>
                         <div class="textwidget">
                             <p>
-                                <strong>Progess workshop @ BCU</strong>: May 14, 2025<br>
-                                <strong>Progress meeting @ Leeds</strong>: December 16, 2024<br>
                                 <strong>Kick-off meeting @ York</strong>: July 8, 2024<br>
                                 <strong>All-Hands meeting @ Imperial</strong>: September 26, 2024
                             </p>
@@ -181,11 +238,11 @@
             </div>
         </div>
         
-        <!-- Footer - FIXED: Removed JavaScript loading -->
+        <!-- Footer -->
         <footer id="colophon" class="site-footer" role="contentinfo">
             <div class="site-info">
                 <div class="wrapper">
-                    <p class="copy-right">All rights reserved © ORAN-TWIN and ORAN-TWIN-X</p>
+                    <p class="copy-right">All rights reserved © ORAN-TWIN 2024</p>
                 </div>
             </div>
         </footer>
