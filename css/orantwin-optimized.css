@@ -1,4 +1,4 @@
-/* ORAN-TWIN Optimized Styles - FIXED VERSION */
+/* ORAN-TWIN Optimized Styles - UPDATED VERSION */
 /* ============================================= */
 
 /* Reset and Base Styles */
@@ -63,7 +63,7 @@
     outline-offset: 2px;
 }
 
-/* Content Spacing - FIXED: Removed problematic styles */
+/* Content Spacing */
 .entry-content h2 {
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -85,11 +85,10 @@
     color: #555;
 }
 
-/* FIXED: Image visibility - removed problematic styles */
 .entry-content img {
     max-width: 100%;
     height: auto;
-    display: block; /* Ensure images are visible */
+    display: block;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
@@ -109,7 +108,7 @@
     font-size: 1.2rem;
 }
 
-/* Team Section Styling - FIXED */
+/* Team Section Styling */
 .team-section, .researcher-section {
     margin: 3rem 0;
 }
@@ -139,7 +138,6 @@
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
-/* FIXED: Member photos - ensure they're visible */
 .member-photo {
     width: 200px;
     height: 200px;
@@ -148,7 +146,7 @@
     margin-right: 2rem;
     border: 4px solid #0066cc;
     flex-shrink: 0;
-    display: block; /* Ensure visibility */
+    display: block;
 }
 
 .member-info {
@@ -181,7 +179,7 @@
     color: #555;
 }
 
-/* Researcher Grid - FIXED */
+/* Researcher Grid */
 .researcher-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -203,7 +201,6 @@
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
-/* FIXED: Researcher photos - ensure visibility */
 .researcher-photo {
     width: 150px;
     height: 150px;
@@ -211,7 +208,7 @@
     object-fit: cover;
     margin: 0 auto 1rem;
     border: 3px solid #0066cc;
-    display: block; /* Ensure visibility */
+    display: block;
 }
 
 .researcher-info h4 {
@@ -290,12 +287,10 @@
     font-size: 1.1rem;
 }
 
-/* Partner Logos - FIXED */
+/* UPDATED: Partner Logos - Removed background box and styling */
 .partner-logos {
     margin: 3rem 0;
-    padding: 2rem 0;
-    background: #f8f9fa;
-    border-radius: 12px;
+    /* Removed: background, padding, border-radius */
 }
 
 .logo-grid {
@@ -304,34 +299,27 @@
     gap: 2rem;
     align-items: center;
     justify-items: center;
-    padding: 2rem 0;
+    /* Removed: padding */
 }
 
 .logo-grid a {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    padding: 1rem;
-    border-radius: 8px;
+    transition: transform 0.3s ease;
+    /* Removed: padding, border-radius */
 }
 
 .logo-grid a:hover {
     transform: scale(1.05);
-    opacity: 0.8;
+    /* Removed: opacity change */
 }
 
-/* FIXED: Logo images - ensure visibility */
 .logo-grid img {
     max-width: 100%;
     height: auto;
-    display: block; /* Ensure visibility */
-    filter: grayscale(20%);
-    transition: filter 0.3s ease;
-}
-
-.logo-grid a:hover img {
-    filter: grayscale(0%);
+    display: block;
+    /* Removed: filter effects */
 }
 
 /* Contact Info Styling */
@@ -489,9 +477,6 @@ button:focus {
     outline: 2px solid #0066cc;
     outline-offset: 2px;
 }
-
-/* REMOVED: Problematic loading states that were hiding images */
-/* The original CSS had img[loading="lazy"] styles that were hiding images */
 
 /* Utility Classes */
 .sr-only {
