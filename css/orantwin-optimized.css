@@ -287,24 +287,23 @@
     font-size: 1.1rem;
 }
 
-/* Partner Logo Styling */
+/* Partner Logo Styling - Simple Images Only */
 .partner-logos {
     margin: 3rem 0;
+    text-align: center;
 }
 
 .logo-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    justify-items: center;
+    gap: 2rem;
     padding: 2rem 0;
 }
 
 .logo-grid a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
     transition: transform 0.3s ease;
 }
 
@@ -315,7 +314,7 @@
 .logo-grid img {
     max-width: 100%;
     height: auto;
-    border-radius: 4px;
+    display: block;
 }
 
 /* Contact Info Styling */
@@ -615,12 +614,11 @@
     
     /* Mobile responsiveness for partner logos */
     .logo-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        gap: 1.5rem;
     }
     
     .logo-grid img {
-        max-width: 100px;
+        max-width: 120px;
     }
 }
 
@@ -666,8 +664,11 @@
     
     /* Mobile responsiveness for partner logos */
     .logo-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap: 1rem;
+    }
+    
+    .logo-grid img {
+        max-width: 100px;
     }
 }
 
