@@ -287,8 +287,36 @@
     font-size: 1.1rem;
 }
 
-/* REMOVED: All partner logo styling - they will use default browser styling */
-/* No CSS rules for .partner-logos, .logo-grid, .logo-grid a, or .logo-grid img */
+/* Partner Logo Styling */
+.partner-logos {
+    margin: 3rem 0;
+}
+
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    align-items: center;
+    justify-items: center;
+    padding: 2rem 0;
+}
+
+.logo-grid a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.logo-grid a:hover {
+    transform: scale(1.05);
+}
+
+.logo-grid img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
 
 /* Contact Info Styling */
 .contact-info {
@@ -584,6 +612,16 @@
     .news-item, .publication-item, .event-item {
         padding: 1.5rem;
     }
+    
+    /* Mobile responsiveness for partner logos */
+    .logo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .logo-grid img {
+        max-width: 100px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -624,6 +662,12 @@
     
     .event-date .day {
         font-size: 1.5rem;
+    }
+    
+    /* Mobile responsiveness for partner logos */
+    .logo-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
 }
 
